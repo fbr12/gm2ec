@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+body{
+    background-color: black;
+}
+div.top{
+    display: flex;
+}
+div.procart{
+    display: flex;
+    margin-left: auto;
+}
+h3{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
