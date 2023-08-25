@@ -1,19 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
 body{
-    background-color: black;
+    background-color: #222;
 }
 div.top{
     display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: #222;
 }
 div.procart{
     display: flex;
     margin-left: auto;
 }
+div.card{
+    z-index: 1;
+    display: grid;
+    position: relative;
+}
+div.svg{
+    z-index: 2;
+    display: flex;
+    position: absolute;
+}
 h3{
+    z-index: 3;
     color: #FFF;
     font-family: Inter;
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
+}
+h4{
+    z-index: 4;
+    color: var(--black, #222);
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+p{
+    z-index: 4;
+    color: #808080;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; 
+}
+div.card{
+    background-image: url(#filter0_d_152_165);
+}
+button.basket{
+    background: #222;
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+button.basket {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: #222;
+    border-radius: 10px;
+  }
+button.basket::before{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    right: -50px;
+    height: 25px;
+    width: 17px;
+    border-top-right-radius: 25px;
+}  
+img{
+    z-index: 4;
 }
