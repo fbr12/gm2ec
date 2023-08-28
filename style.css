@@ -15,8 +15,16 @@ div.procart{
 }
 div.card{
     z-index: 1;
-    display: grid;
+    display: flex;
+    justify-content: center;
     position: relative;
+}
+img{
+    z-index: 4;
+    padding-top: 4em;
+    padding-right: 4em;
+    display: flex;
+    justify-self: center;
 }
 div.svg{
     z-index: 2;
@@ -34,6 +42,7 @@ h3{
 }
 h4{
     z-index: 4;
+    position: absolute;
     color: var(--black, #222);
     font-family: Rubik;
     font-size: 20px;
@@ -41,6 +50,9 @@ h4{
     font-weight: 500;
     line-height: 120%;
     text-transform: capitalize;
+    padding-top: 12em;
+    padding-right: 3em;
+    max-width: 13em;
 }
 p{
     z-index: 4;
@@ -49,7 +61,10 @@ p{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 180%; 
+    line-height: 180%;
+    position: absolute;
+    padding-top: 23em; 
+    padding-right: 14.1em;
 }
 div.card{
     background-image: url(#filter0_d_152_165);
@@ -62,24 +77,16 @@ button.basket{
     width: 50px;
     height: 50px;
 }
+div.button{
+    position: absolute;
+    padding-top: 26em;
+    padding-left: 3em;
+}
 button.basket {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    position: absolute;
     height: 50px;
     width: 50px;
     background-color: #222;
     border-radius: 10px;
-  }
-button.basket::before{
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    right: -50px;
-    height: 25px;
-    width: 17px;
-    border-top-right-radius: 25px;
-}  
-img{
-    z-index: 4;
 }
+
