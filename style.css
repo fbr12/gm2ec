@@ -22,7 +22,7 @@ div.card{
 img{
     z-index: 4;
     padding-top: 4em;
-    padding-right: 4em;
+    padding-right: 1em;
     display: flex;
     justify-self: center;
 }
@@ -54,7 +54,7 @@ h4{
     padding-right: 3em;
     max-width: 13em;
 }
-p{
+p.idn{
     z-index: 4;
     color: #808080;
     font-family: Rubik;
@@ -88,5 +88,31 @@ button.basket {
     width: 50px;
     background-color: #222;
     border-radius: 10px;
+}
+p.price{
+    z-index: 4;
+    color: var(--red, #941B0C);
+    text-align: right;
+    font-family: Rubik;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    position: absolute;
+    padding-top: 8.5em;
+    padding-left: 6em;
+}
+p.discount{
+    position: absolute;
+    color: var(--gray, #808080);
+    text-align: right;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    text-decoration: line-through;
+    padding-top: 20em;
+    padding-left: 17.6em;
 }
 
